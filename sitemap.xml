@@ -2,72 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
-		<loc>https://example.com/blog/firstpost/</loc>
+		<loc>https://asmalcev.github.io/notes/blog/firstpost/</loc>
 		<lastmod>2018-05-01</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/secondpost/</loc>
+		<loc>https://asmalcev.github.io/notes/blog/secondpost/</loc>
 		<lastmod>2018-07-04</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/thirdpost/</loc>
+		<loc>https://asmalcev.github.io/notes/blog/thirdpost/</loc>
 		<lastmod>2018-08-24</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/fourthpost/</loc>
+		<loc>https://asmalcev.github.io/notes/blog/fourthpost/</loc>
 		<lastmod>2018-09-30</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/1/</loc>
+		<loc>https://asmalcev.github.io/notes/blog/1/</loc>
 		<lastmod>2024-09-27</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/about/</loc>
+		<loc>https://asmalcev.github.io/notes/about/</loc>
 		<lastmod>2024-10-06</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/blog/</loc>
+		<loc>https://asmalcev.github.io/notes/blog/</loc>
 		<lastmod>2024-10-06</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/</loc>
+		<loc>https://asmalcev.github.io/notes/</loc>
 		<lastmod>2024-10-06</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/tags/</loc>
+		<loc>https://asmalcev.github.io/notes/tags/</loc>
 		<lastmod>2024-10-06</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/tags/test/</loc>
+		<loc>https://asmalcev.github.io/notes/tags/test/</loc>
 		<lastmod>2024-10-06</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/tags/another-tag/</loc>
+		<loc>https://asmalcev.github.io/notes/tags/another-tag/</loc>
 		<lastmod>2024-10-06</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/tags/number-2/</loc>
+		<loc>https://asmalcev.github.io/notes/tags/number-2/</loc>
 		<lastmod>2024-10-06</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/tags/second-tag/</loc>
+		<loc>https://asmalcev.github.io/notes/tags/second-tag/</loc>
 		<lastmod>2024-10-06</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://example.com/tags/posts-with-two-tags/</loc>
+		<loc>https://asmalcev.github.io/notes/tags/posts-with-two-tags/</loc>
 		<lastmod>2024-10-06</lastmod>
 	</url>
 </urlset>
