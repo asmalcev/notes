@@ -3,13 +3,21 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<title>Notes</title>
 		<meta name="description" content="">
+		<meta name="keywords" content="">
 		<link rel="alternate" href="/notes/feed/feed.xml" type="application/atom+xml" title="Notes">
 		<link rel="alternate" href="/notes/feed/feed.json" type="application/json" title="Notes">
+
+		<meta name="author" content="Александр Мальцев">
+
+		<meta property="og:title" content="Notes">
+		<meta property="og:description" content="">
+		<meta property="og:type" content="website">
 		
-		<style>* { box-sizing: border-box; }
-/* Defaults */
+		
+		<style>/* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
@@ -64,7 +72,11 @@ html {
 	overflow-y: scroll;
 }
 body {
+	display: flex;
+	flex-direction: column;
+
 	max-width: 40em;
+	min-height: 100vh;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -278,6 +290,17 @@ a[href].header-anchor:focus,
 
 h2 + .header-anchor {
 	font-size: 1.5em;
+}
+footer {
+	padding: 1rem;
+	border-radius: 1rem 1rem 0 0;
+	margin-top: auto;
+
+	background-color: var(--color-gray-20);
+}
+
+footer p {
+	margin: 0;
 }</style>
 	</head>
 	<body>
@@ -288,9 +311,9 @@ h2 + .header-anchor {
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/notes/">Home</a></li>
-					<li class="nav-item"><a href="/notes/blog/">Archive</a></li>
-					<li class="nav-item"><a href="/notes/about/">About Me</a></li>
+					<li class="nav-item"><a href="/notes/">Главная</a></li>
+					<li class="nav-item"><a href="/notes/blog/">Архив</a></li>
+					<li class="nav-item"><a href="/notes/about/blog/">О блоге</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -302,18 +325,6 @@ h2 + .header-anchor {
 <ul>
 
 	
-	<li><a href="/notes/tags/another-tag/" class="post-tag">another tag</a></li>
-
-	
-	<li><a href="/notes/tags/number-2/" class="post-tag">number 2</a></li>
-
-	
-	<li><a href="/notes/tags/second-tag/" class="post-tag">second tag</a></li>
-
-	
-	<li><a href="/notes/tags/posts-with-two-tags/" class="post-tag">posts with two tags</a></li>
-
-	
 	<li><a href="/notes/tags/test/" class="post-tag">test</a></li>
 
 </ul>
@@ -321,8 +332,10 @@ h2 + .header-anchor {
 
 		</main>
 
-		<footer></footer>
+		<footer>
+			<p>© Александр Мальцев</p>
+		</footer>
 
-		<!-- This page `/notes/tags/` was built on 2024-10-06T13:50:17.787Z -->
+		<!-- This page `/notes/tags/` was built on 2024-10-13T10:52:28.002Z -->
 	</body>
 </html>

@@ -3,10 +3,19 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>This is my first post.</title>
-		<meta name="description" content="This is a post on My Blog about agile frameworks.">
+
+		<title>Проверка связи</title>
+		<meta name="description" content="По сути пустая страница">
+		<meta name="keywords" content="">
 		<link rel="alternate" href="/notes/feed/feed.xml" type="application/atom+xml" title="Notes">
 		<link rel="alternate" href="/notes/feed/feed.json" type="application/json" title="Notes">
+
+		<meta name="author" content="Александр Мальцев">
+
+		<meta property="og:title" content="Проверка связи">
+		<meta property="og:description" content="По сути пустая страница">
+		<meta property="og:type" content="website">
+		
 		
 		<style>/**
  * okaidia theme for JavaScript, CSS and HTML
@@ -176,7 +185,6 @@ pre[class*="language-diff-"] {
 	text-decoration: none; /* override del, ins, mark defaults */
 	color: inherit; /* override del, ins, mark defaults */
 }
-* { box-sizing: border-box; }
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
@@ -232,7 +240,11 @@ html {
 	overflow-y: scroll;
 }
 body {
+	display: flex;
+	flex-direction: column;
+
 	max-width: 40em;
+	min-height: 100vh;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -446,6 +458,17 @@ a[href].header-anchor:focus,
 
 h2 + .header-anchor {
 	font-size: 1.5em;
+}
+footer {
+	padding: 1rem;
+	border-radius: 1rem 1rem 0 0;
+	margin-top: auto;
+
+	background-color: var(--color-gray-20);
+}
+
+footer p {
+	margin: 0;
 }</style>
 	</head>
 	<body>
@@ -456,44 +479,38 @@ h2 + .header-anchor {
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/notes/">Home</a></li>
-					<li class="nav-item"><a href="/notes/blog/">Archive</a></li>
-					<li class="nav-item"><a href="/notes/about/">About Me</a></li>
+					<li class="nav-item"><a href="/notes/">Главная</a></li>
+					<li class="nav-item"><a href="/notes/blog/">Архив</a></li>
+					<li class="nav-item"><a href="/notes/about/blog/">О блоге</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<main id="skip">
 			
-<h1>This is my first post.</h1>
+<h1>Проверка связи</h1>
 
 <ul class="post-metadata">
-	<li><time datetime="2018-05-01">01 May 2018</time></li>
-	<li><a href="/notes/tags/another-tag/" class="post-tag">another tag</a></li>
+	<li><time datetime="2024-09-27">27 September 2024</time></li>
+	<li><a href="/notes/tags/test/" class="post-tag">test</a></li>
 </ul>
 
-<p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-<p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-<h2 id="section-header" tabindex="-1">Section Header <a class="header-anchor" href="#section-header">#</a></h2>
-<p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-<pre class="language-diff-js" tabindex="0"><code class="language-diff-js"><span class="token unchanged language-js"><span class="token prefix unchanged"> </span><span class="token comment">// this is a command</span>
-<span class="token prefix unchanged"> </span><span class="token keyword">function</span> <span class="token function">myCommand</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-</span><span class="token inserted-sign inserted language-js"><span class="token prefix inserted">+</span>  <span class="token keyword">let</span> counter <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-</span><span class="token deleted-sign deleted language-js"><span class="token prefix deleted">-</span>  <span class="token keyword">let</span> counter <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-</span><span class="token unchanged language-js"><span class="token prefix unchanged"> </span>  counter<span class="token operator">++</span><span class="token punctuation">;</span>
-<span class="token prefix unchanged"> </span><span class="token punctuation">}</span>
-</span>
-<span class="token unchanged language-js"><span class="token prefix unchanged"> </span><span class="token comment">// Test with a line break above this line.</span>
-<span class="token prefix unchanged"> </span>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Test'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</span></code></pre>
+<h1 id="hello-world" tabindex="-1">Hello world! <a class="header-anchor" href="#hello-world">#</a></h1>
+<p>Привет мир!</p>
+<p>Loreum ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Loreum ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Loreum ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Loreum ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Loreum ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Loreum ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<ul class="links-nextprev"><li>Next: <a href="/notes/blog/secondpost/">This is my second post with a much longer title.</a></li>
-</ul>
 
 		</main>
 
-		<footer></footer>
+		<footer>
+			<p>© Александр Мальцев</p>
+		</footer>
 
-		<!-- This page `/notes/blog/firstpost/` was built on 2024-10-06T13:50:17.784Z -->
+		<!-- This page `/notes/blog/nothing/` was built on 2024-10-13T10:52:28.000Z -->
 	</body>
 </html>

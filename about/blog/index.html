@@ -3,181 +3,21 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Проверка связи</title>
-		<meta name="description" content="">
+
+		<title>О блоге</title>
+		<meta name="description" content="Отчет по практической работе для ВУЗа">
+		<meta name="keywords" content="">
 		<link rel="alternate" href="/notes/feed/feed.xml" type="application/atom+xml" title="Notes">
 		<link rel="alternate" href="/notes/feed/feed.json" type="application/json" title="Notes">
+
+		<meta name="author" content="Александр Мальцев">
+
+		<meta property="og:title" content="О блоге">
+		<meta property="og:description" content="Отчет по практической работе для ВУЗа">
+		<meta property="og:type" content="website">
 		
-		<style>/**
- * okaidia theme for JavaScript, CSS and HTML
- * Loosely based on Monokai textmate theme by http://www.monokai.nl/
- * @author ocodia
- */
-
-code[class*="language-"],
-pre[class*="language-"] {
-	color: #f8f8f2;
-	background: none;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 1em;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1.5;
-
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
-	border-radius: 0.3em;
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background: #272822;
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-	white-space: normal;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-	color: #8292a2;
-}
-
-.token.punctuation {
-	color: #f8f8f2;
-}
-
-.token.namespace {
-	opacity: .7;
-}
-
-.token.property,
-.token.tag,
-.token.constant,
-.token.symbol,
-.token.deleted {
-	color: #f92672;
-}
-
-.token.boolean,
-.token.number {
-	color: #ae81ff;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-	color: #a6e22e;
-}
-
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string,
-.token.variable {
-	color: #f8f8f2;
-}
-
-.token.atrule,
-.token.attr-value,
-.token.function,
-.token.class-name {
-	color: #e6db74;
-}
-
-.token.keyword {
-	color: #66d9ef;
-}
-
-.token.regex,
-.token.important {
-	color: #fd971f;
-}
-
-.token.important,
-.token.bold {
-	font-weight: bold;
-}
-.token.italic {
-	font-style: italic;
-}
-
-.token.entity {
-	cursor: help;
-}
-/*
- * New diff- syntax
- */
-
-pre[class*="language-diff-"] {
-	--eleventy-code-padding: 1.25em;
-	padding-left: var(--eleventy-code-padding);
-	padding-right: var(--eleventy-code-padding);
-}
-.token.deleted {
-	background-color: hsl(0, 51%, 37%);
-	color: inherit;
-}
-.token.inserted {
-	background-color: hsl(126, 31%, 39%);
-	color: inherit;
-}
-
-/* Make the + and - characters unselectable for copy/paste */
-.token.prefix.unchanged,
-.token.prefix.inserted,
-.token.prefix.deleted {
-	-webkit-user-select: none;
-	user-select: none;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	padding-top: 2px;
-	padding-bottom: 2px;
-}
-.token.prefix.inserted,
-.token.prefix.deleted {
-	width: var(--eleventy-code-padding);
-	background-color: rgba(0,0,0,.2);
-}
-
-/* Optional: full-width background color */
-.token.inserted:not(.prefix),
-.token.deleted:not(.prefix) {
-	display: block;
-	margin-left: calc(-1 * var(--eleventy-code-padding));
-	margin-right: calc(-1 * var(--eleventy-code-padding));
-	text-decoration: none; /* override del, ins, mark defaults */
-	color: inherit; /* override del, ins, mark defaults */
-}
-* { box-sizing: border-box; }
-/* Defaults */
+		
+		<style>/* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
 	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
@@ -232,7 +72,11 @@ html {
 	overflow-y: scroll;
 }
 body {
+	display: flex;
+	flex-direction: column;
+
 	max-width: 40em;
+	min-height: 100vh;
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -446,6 +290,17 @@ a[href].header-anchor:focus,
 
 h2 + .header-anchor {
 	font-size: 1.5em;
+}
+footer {
+	padding: 1rem;
+	border-radius: 1rem 1rem 0 0;
+	margin-top: auto;
+
+	background-color: var(--color-gray-20);
+}
+
+footer p {
+	margin: 0;
 }</style>
 	</head>
 	<body>
@@ -456,32 +311,22 @@ h2 + .header-anchor {
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
-					<li class="nav-item"><a href="/notes/">Home</a></li>
-					<li class="nav-item"><a href="/notes/blog/">Archive</a></li>
-					<li class="nav-item"><a href="/notes/about/">About Me</a></li>
+					<li class="nav-item"><a href="/notes/">Главная</a></li>
+					<li class="nav-item"><a href="/notes/blog/">Архив</a></li>
+					<li class="nav-item"><a href="/notes/about/blog/" aria-current="page">О блоге</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<main id="skip">
-			
-<h1>Проверка связи</h1>
-
-<ul class="post-metadata">
-	<li><time datetime="2024-09-27">27 September 2024</time></li>
-	<li><a href="/notes/tags/test/" class="post-tag">test</a></li>
-</ul>
-
-<h1 id="hello-world" tabindex="-1">Hello world! <a class="header-anchor" href="#hello-world">#</a></h1>
-<p>Привет мир!</p>
-
-<ul class="links-nextprev"><li>Previous: <a href="/notes/blog/fourthpost/">This is my fourth post!</a></li>
-</ul>
+			<h1 id="o-bloge" tabindex="-1">О блоге <a class="header-anchor" href="#o-bloge">#</a></h1>
 
 		</main>
 
-		<footer></footer>
+		<footer>
+			<p>© Александр Мальцев</p>
+		</footer>
 
-		<!-- This page `/notes/blog/1/` was built on 2024-10-06T13:50:17.784Z -->
+		<!-- This page `/notes/about/blog/` was built on 2024-10-13T10:52:27.997Z -->
 	</body>
 </html>

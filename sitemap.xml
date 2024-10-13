@@ -2,72 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 	
 	<url>
-		<loc>https://asmalcev.github.io/notes/blog/firstpost/</loc>
-		<lastmod>2018-05-01</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://asmalcev.github.io/notes/blog/secondpost/</loc>
-		<lastmod>2018-07-04</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://asmalcev.github.io/notes/blog/thirdpost/</loc>
-		<lastmod>2018-08-24</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://asmalcev.github.io/notes/blog/fourthpost/</loc>
-		<lastmod>2018-09-30</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://asmalcev.github.io/notes/blog/1/</loc>
+		<loc>https://asmalcev.github.io/notes/blog/nothing/</loc>
 		<lastmod>2024-09-27</lastmod>
 	</url>
 	
 	<url>
-		<loc>https://asmalcev.github.io/notes/about/</loc>
-		<lastmod>2024-10-06</lastmod>
+		<loc>https://asmalcev.github.io/notes/about/blog/</loc>
+		<lastmod>2024-10-13</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://asmalcev.github.io/notes/blog/</loc>
-		<lastmod>2024-10-06</lastmod>
+		<lastmod>2024-10-13</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://asmalcev.github.io/notes/</loc>
-		<lastmod>2024-10-06</lastmod>
+		<lastmod>2024-10-13</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://asmalcev.github.io/notes/tags/</loc>
-		<lastmod>2024-10-06</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://asmalcev.github.io/notes/tags/number-2/</loc>
-		<lastmod>2024-10-06</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://asmalcev.github.io/notes/tags/another-tag/</loc>
-		<lastmod>2024-10-06</lastmod>
+		<lastmod>2024-10-13</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://asmalcev.github.io/notes/tags/test/</loc>
-		<lastmod>2024-10-06</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://asmalcev.github.io/notes/tags/second-tag/</loc>
-		<lastmod>2024-10-06</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://asmalcev.github.io/notes/tags/posts-with-two-tags/</loc>
-		<lastmod>2024-10-06</lastmod>
+		<lastmod>2024-10-13</lastmod>
 	</url>
 </urlset>
