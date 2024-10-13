@@ -1,0 +1,14 @@
+footer {
+	display: flex;
+	justify-content: center;
+
+	padding: 1rem;
+	margin-top: auto;
+	border: 1px var(--color-gray-20) solid;
+	border-radius: 1rem 1rem 0 0;
+}
+
+footer p {
+	margin: 0;
+	color: var(--text-color-secondary);
+}
