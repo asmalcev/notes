@@ -6,7 +6,7 @@ eleventyNavigation:
 numberOfLatestPostsToShow: 3
 ---
 
-{% include "notes-animation.njk" %}
+{# {% include "notes-animation.njk" %} #}
 
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
