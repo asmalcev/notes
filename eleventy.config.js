@@ -12,13 +12,14 @@ const CleanCSS = require("clean-css");
 const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
 
+const crypto = require("node:crypto");
+
 /** @param {import('@11ty/eleventy').UserConfig} eleventyConfig */
 module.exports = function (eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig.addPassthroughCopy({
 		"./public/": "/",
-		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css",
 	});
 
 	// Run Eleventy when these files change:
@@ -87,6 +88,10 @@ module.exports = function (eleventyConfig) {
 		return (tags || []).filter(
 			(tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
 		);
+	});
+
+	eleventyConfig.addFilter("generateHashId", (content) => {
+		return `vtn${crypto.createHash("md5").update(content).digest("hex")}`;
 	});
 
 	// Customize Markdown library settings:

@@ -8,7 +8,6 @@
 		<meta name="description" content="{{ description or metadata.description }}">
 		<meta name="keywords" content="{{ keywords or metadata.keywords }}">
 
-		{#- Atom and JSON feeds included by default #}
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
 
@@ -22,8 +21,10 @@
 
 		{%- set css %}
 			{% include "public/css/index.css" %}
-			{% include "css/footer.css" %}
+			{% include "public/css/footer.css" %}
+			{% include "public/css/custom.css" %}
 		{% endset %}
+		<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
 		<style>{{ css | cssmin | safe }}</style>
 	</head>
 	<body>
@@ -32,7 +33,6 @@
 		<header>
 			<a href="/" class="home-link">{{ metadata.title }}</a>
 
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
 				<ul class="nav">
@@ -48,9 +48,10 @@
 		</main>
 
 		<footer>
-			<p>© {{ metadata.author.name }}. {{ currentDate.year }}</p>
+			<p>© {{ metadata.author.name }} {{ currentDate.year }}</p>
 		</footer>
 
+		<script src="https://cdn.jsdelivr.net/npm/baseline-status@1/baseline-status.min.js" type="module" defer></script>
 		<!-- This page `{{ page.url | htmlBaseUrl }}` was built on {% currentBuildDate %} -->
 	</body>
 </html>

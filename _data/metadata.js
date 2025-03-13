@@ -4,7 +4,7 @@ module.exports = {
 	language: "ru",
 	description: "",
 	author: {
-		name: "Александр Мальцев",
+		name: "asmalcev",
 		email: "i@asmalcev.ru",
 		url: "https://asmalcev.github.io/notes"
 	}
